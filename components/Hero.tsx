@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -8,7 +9,7 @@ export default function Hero() {
       {/* Title Bar */}
       <div className="text-center py-4 bg-gray-50/50">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight" style={{ color: '#000' }}>
-          Welcome to <span style={{ color: '#EAA938' }}>MAJESTICGAMES</span>
+          Welcome to <span style={{ color: '#EAA938' }}>MAJESTIC  GAMES</span>
         </h1>
       </div>
 
@@ -69,10 +70,11 @@ export default function Hero() {
                   transition={{ delay: 0.2 }}
                   className="text-5xl md:text-6xl font-light"
                   style={{
-                    fontFamily: '"Brush Script MT", cursive',
-                    color: "#000080",
-                    letterSpacing: "0.08em"
-                  }}
+                      fontFamily: 'Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif',
+                      color: "#000080",
+                      letterSpacing: "0.04em",
+                      fontWeight: 600
+                    }}
                 >
                   Majestic
                 </motion.h1>
@@ -83,10 +85,11 @@ export default function Hero() {
                   transition={{ delay: 0.4 }}
                   className="text-5xl md:text-6xl font-light"
                   style={{
-                    fontFamily: '"Brush Script MT", cursive',
-                    color: "#000080",
-                    letterSpacing: "0.08em"
-                  }}
+                      fontFamily: 'Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif',
+                      color: "#000080",
+                      letterSpacing: "0.04em",
+                      fontWeight: 600
+                    }}
                 >
                   Games
                 </motion.h1>
@@ -146,13 +149,16 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="w-full  h-full max-w-sm flex items-center justify-center bg-gray-100 rounded-3xl shadow-inner border-4 border-dashed border-gray-300"
+              className="w-full h-full max-w-sm bg-white rounded-3xl shadow-inner overflow-hidden relative"
             >
-              <div className="text-center p-4">
-                <span className="text-4xl block mb-2">📸</span>
-                <p className="text-sm font-semibold text-gray-500">Banner Image Area</p>
-                <p className="text-xs text-gray-400 mt-1">(Model with cash graphic)</p>
-              </div>
+              <Image
+                src="/images/image.png"
+                alt="Majestic Games banner"
+                fill
+                style={{ objectFit: 'contain' }}
+                sizes="(max-width: 768px) 80vw, 400px"
+                className="object-contain"
+              />
             </motion.div>
           </div>
 

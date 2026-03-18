@@ -9,7 +9,7 @@ export default function Header() {
       {/* Logo */}
       <Link href="/" className="flex items-center">
         <span className="font-extrabold text-2xl tracking-tight" style={{ color: '#EAA938' }}>
-          MAJESTICGAMES
+          MAJESTIC GAMES
         </span>
       </Link>
 

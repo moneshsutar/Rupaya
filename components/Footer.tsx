@@ -24,7 +24,7 @@ export default function Footer() {
               MAJESTIC
             </span>
             <span className="font-extrabold text-2xl leading-none" style={{ color: '#111', fontFamily: 'Arial, sans-serif' }}>
-              GAMES
+               GAMES
             </span>
             <span className="text-[10px] font-bold tracking-widest mt-1" style={{ color: '#555' }}>
               MOST TRUSTED
