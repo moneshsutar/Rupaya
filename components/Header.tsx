@@ -29,7 +29,7 @@ export default function Header() {
         </div>
 
         <a
-          href="/Majesticpride.apk"
+          href="/Rupaya.apk"
           className="golden-button-shine w-9 h-9 flex items-center justify-center rounded-full shadow-sm"
           aria-label="Download APK"
         >

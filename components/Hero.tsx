@@ -54,7 +54,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            href="/Majesticpride.apk"
+            href="/Rupaya.apk"
             download
             className="golden-button-shine px-8 py-3.5 rounded text-sm md:text-base font-bold uppercase tracking-widest shadow-xl hover:-translate-y-1 transition-transform mt-10 lg:mt-0"
           >
