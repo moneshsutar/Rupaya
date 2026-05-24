@@ -5,164 +5,82 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="w-full relative overflow-hidden bg-white">
-      {/* Title Bar */}
-      <div className="text-center py-4 bg-gray-50/50">
-        <h1 className="text-3xl md:text-5xl font-black tracking-tight" style={{ color: '#000' }}>
-          Welcome to <span style={{ color: '#EAA938' }}>MAJESTIC  GAMES</span>
-        </h1>
+    <section 
+      className="w-full min-h-screen lg:min-h-[80vh] lg:h-[80vh] relative overflow-hidden py-16 lg:py-10 flex items-center"
+    >
+      {/* Sunlight Effect */}
+      <div className="hero-sunlight-container">
+        <div className="hero-sunlight-shine"></div>
       </div>
 
-      {/* Main Banner Area */}
-      <div className="relative w-full overflow-hidden" style={{ minHeight: '320px' }}>
-        {/* Background Stripes Design - Hand-painted SVG looking */}
-        <div
-          className="absolute   right-0 top-0 w-full md:w-3/5 lg:w-1/2 h-full opacity-90"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='none'%3E%3Cdefs%3E%3Cpattern id='strokes' width='200' height='200' patternTransform='rotate(-45 0 0)' patternUnits='userSpaceOnUse'%3E%3Cpath d='M-10,50 Q10,40 50,55 T100,45 T150,50 T210,48 L210,80 Q150,90 100,75 T50,85 T-10,75 Z' fill='%23990000'/%3E%3Cpath d='M-10,120 Q20,110 60,125 T120,115 T180,130 T220,120 L220,150 Q180,165 120,145 T60,165 T-10,145 Z' fill='%23EAA938'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='2000' height='2000' x='-500' y='-500' fill='url(%23strokes)'/%3E%3C/svg%3E")`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'right center',
-          }}
-        />
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+        
+        {/* Left Side: Professional Text */}
+        <div className="flex flex-col items-center lg:items-start justify-center text-center lg:text-left pt-4 lg:pt-16 lg:-translate-x-8 xl:-translate-x-16">
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="mb-4 flex items-center justify-center lg:justify-start gap-3 w-full"
+          >
+            <div className="w-10 h-[2px] bg-[#7A0000]"></div>
+            <span className="font-bold tracking-[0.15em] text-[#7A0000] text-sm uppercase">
+              100% Trusted Platform
+            </span>
+          </motion.div>
 
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.8) 40%, rgba(255,255,255,0) 100%)' }} />
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 lg:mb-6 text-[#111]"
+            style={{ fontFamily: '"Brush Script MT", "Comic Sans MS", cursive', letterSpacing: '0.05em' }}
+          >
+            Experience the <br />
+            <span className="text-[#7A0000]">rupaya Games</span>
+          </motion.h1>
 
-        {/* Content Container */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full py-8 md:py-12 flex flex-col md:flex-row items-center justify-between">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-gray-900 text-base sm:text-lg md:text-xl max-w-[90%] sm:max-w-lg mb-8 leading-relaxed font-semibold italic mx-auto lg:mx-0"
+          >
+            Play online Matka with India's most secure and fastest-growing platform. Win big prizes and enjoy lightning-fast withdrawals.
+          </motion.p>
 
-          {/* Left Side Content */}
-          <div className="flex-1 text-center md:text-left z-20">
-            <motion.h2
-              initial={{ x: -20, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.6 }}
-              className="font-bold mb-4"
-              style={{
-                fontFamily: 'cursive, sans-serif',
-                fontSize: 'clamp(32px, 6vw, 64px)',
-                color: '#7A0000',
-                textShadow: '1px 1px 2px rgba(0,0,0,0.1)'
-              }}
-            >
-              Play Online Matka
-            </motion.h2>
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="flex flex-col items-center justify-center py-14"
-            >
-
-              {/* Top ruling line */}
-              <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: "240px" }}
-                transition={{ duration: 0.7 }}
-                className="h-[1px] bg-yellow-500 mb-6"
-              />
-
-              {/* Main Title */}
-              <div className="text-center leading-tight">
-
-                <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 }}
-                  className="text-5xl md:text-6xl font-light"
-                  style={{
-                      fontFamily: 'Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif',
-                      color: "#000080",
-                      letterSpacing: "0.04em",
-                      fontWeight: 600
-                    }}
-                >
-                  Majestic
-                </motion.h1>
-
-                <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }}
-                  className="text-5xl md:text-6xl font-light"
-                  style={{
-                      fontFamily: 'Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif',
-                      color: "#000080",
-                      letterSpacing: "0.04em",
-                      fontWeight: 600
-                    }}
-                >
-                  Games
-                </motion.h1>
-
-              </div>
-
-              {/* Elegant underline */}
-              <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: "160px" }}
-                transition={{ delay: 0.6, duration: 0.6 }}
-                className="h-[2px] bg-yellow-500 mt-5"
-              />
-
-              {/* Subtitle */}
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.9 }}
-                className="mt-4 text-xs tracking-[0.4em]"
-                style={{
-                  color: "#EAA938",
-                  fontFamily: '"Brush Script MT", cursive'
-                }}
-              >
-                MOST TRUSTED
-              </motion.p>
-
-              {/* Bottom ruling line */}
-              <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: "240px" }}
-                transition={{ delay: 1.1, duration: 0.7 }}
-                className="h-[1px] bg-yellow-500 mt-6"
-              />
-
-            </motion.div>
-            <motion.div
-              initial={{ x: -20, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              className="flex items-center justify-center md:justify-start gap-4 mt-4"
-            >
-              <span className="font-bold italic" style={{ color: '#EAA938', fontSize: 'clamp(24px, 4vw, 36px)' }}>
-                100%
-              </span>
-              <span className="font-bold" style={{ fontFamily: 'cursive, sans-serif', color: '#7A0000', fontSize: 'clamp(24px, 4vw, 36px)' }}>
-                TRUSTED
-              </span>
-            </motion.div>
-          </div>
-
-          {/* Right Side Image Placeholder */}
-          <div className="flex-1 lg:pl-60 md:pl-20 px-4 md:px-0 relative h-64 md:h-[400px] w-full flex items-center justify-center z-10 mt-8 md:mt-0">
-            {/* Model holding money placeholder - we don't have the exact image, using a stylized placeholder */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="w-full h-full max-w-sm bg-white rounded-3xl shadow-inner overflow-hidden relative"
-            >
-              <Image
-                src="/images/image.png"
-                alt="Majestic Games banner"
-                fill
-                style={{ objectFit: 'contain' }}
-                sizes="(max-width: 768px) 80vw, 400px"
-                className="object-contain"
-              />
-            </motion.div>
-          </div>
-
+          <motion.a
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            href="/Majesticpride.apk"
+            download
+            className="golden-button-shine px-8 py-3.5 rounded text-sm md:text-base font-bold uppercase tracking-widest shadow-xl hover:-translate-y-1 transition-transform mt-10 lg:mt-0"
+          >
+            Download APK
+          </motion.a>
         </div>
+
+        {/* Right Side: Exact Image */}
+        <div className="flex justify-center lg:justify-end items-center relative w-full h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px] xl:h-[450px] mt-24 lg:mt-0 translate-x-0 lg:translate-x-24 xl:translate-x-32">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative w-full h-full"
+          >
+            <Image
+              src="/images/uiimage.png"
+              alt="rupaya Games Cards"
+              fill
+              style={{ objectFit: 'contain' }}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+          </motion.div>
+        </div>
+
       </div>
     </section>
   );

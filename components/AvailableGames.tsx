@@ -15,7 +15,7 @@ const availableGames = [
 
 export default function AvailableGames() {
   return (
-    <section className="py-8 px-4" style={{ background: '#F5F5F5' }}>
+    <section className="py-8 px-4">
       {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -44,7 +44,7 @@ export default function AvailableGames() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.05, duration: 0.3 }}
-            className="flex flex-col rounded shadow-md bg-white p-5 w-full"
+            className="flex flex-col rounded shadow-md bg-white/80 backdrop-blur-sm p-5 w-full"
             style={{ borderBottom: '4px solid #F5BB4A' }}
           >
             <div className="flex items-center justify-between">
@@ -71,12 +71,9 @@ export default function AvailableGames() {
 
               {/* Play Button - exact gradient and shape matching image */}
               <button
-                className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-105 active:scale-95"
-                style={{
-                  background: 'linear-gradient(135deg, #FF6B00 0%, #FFA500 50%, #FF8C00 100%)',
-                }}
+                className="golden-button-shine w-12 h-12 rounded-full flex items-center justify-center shadow-lg"
               >
-                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white ml-1">
+                <svg viewBox="0 0 24 24" className="w-5 h-5 ml-1" style={{ fill: '#7A0000' }}>
                   <path d="M8 5v14l11-7z" />
                 </svg>
               </button>

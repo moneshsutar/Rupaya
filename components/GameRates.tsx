@@ -15,7 +15,7 @@ const gameRates = [
 
 export default function GameRates() {
   return (
-    <section className="py-8 px-4" style={{ background: '#F5F5F5' }}>
+    <section className="py-8 px-4">
       {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -44,7 +44,7 @@ export default function GameRates() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.05, duration: 0.3 }}
-            className="flex items-center justify-between px-6 py-5 rounded shadow-md bg-white w-full"
+            className="flex items-center justify-between px-6 py-5 rounded shadow-md bg-white/80 backdrop-blur-sm w-full"
             style={{ borderBottom: '4px solid #F5BB4A' }}
           >
             <div className="flex items-center gap-3">

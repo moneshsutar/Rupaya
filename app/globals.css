@@ -77,6 +77,63 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background-color: #FFCF46;
+    min-height: 100vh;
   }
+}
+
+
+
+@keyframes buttonShine {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.golden-button-shine {
+  background: linear-gradient(90deg, #FFC107 0%, #fff2c8 40%, #FFC107 60%, #FFC107 100%);
+  background-size: 200% auto;
+  animation: buttonShine 3s linear infinite;
+  color: #7A0000 !important;
+  font-weight: bold;
+  border: 1px solid #ffcc00;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.golden-button-shine:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.7);
+}
+
+.hero-sunlight-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-sunlight-shine {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.2) 47%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.2) 53%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  animation: shineTopLeftToBottomRight 4s infinite linear;
+}
+
+@keyframes shineTopLeftToBottomRight {
+  0% { transform: translate(-40%, -40%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translate(40%, 40%); opacity: 0; }
 }

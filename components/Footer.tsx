@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Footer() {
   return (
-    <footer className="w-full relative overflow-hidden" style={{ background: '#EAA938' }}>
+    <footer className="w-full relative overflow-hidden" style={{ background: 'linear-gradient(90deg, #ff990088, #ff9900ea)' }}>
       {/* Main footer content */}
       <div className="px-6 py-10 md:py-16 text-center max-w-4xl mx-auto flex flex-col items-center">
 
@@ -21,10 +21,10 @@ export default function Footer() {
             style={{ background: '#F0B74A' }}
           >
             <span className="font-extrabold text-2xl leading-none" style={{ color: '#111', fontFamily: 'Arial, sans-serif' }}>
-              MAJESTIC
+              rupaya
             </span>
             <span className="font-extrabold text-2xl leading-none" style={{ color: '#111', fontFamily: 'Arial, sans-serif' }}>
-               GAMES
+               Games
             </span>
             <span className="text-[10px] font-bold tracking-widest mt-1" style={{ color: '#555' }}>
               MOST TRUSTED
@@ -63,7 +63,7 @@ export default function Footer() {
           className="text-xs md:text-sm leading-relaxed max-w-3xl mb-10 px-4"
           style={{ color: '#fff' }}
         >
-          Our website is operated by MAJESTIC GAMES International B.V., a company established under the laws of United Kingdom, with registered address at Ground Floor 10th St George's Court Myrtle Street Douglas Isle of Man TM1 ED12559810 and having its gaming sublicence issued, by United Kingdom e-Gaming and all rights to operate the gaming software worldwide.
+          Our website is operated by rupaya Games International B.V., a company established under the laws of United Kingdom, with registered address at Ground Floor 10th St George's Court Myrtle Street Douglas Isle of Man TM1 ED12559810 and having its gaming sublicence issued, by United Kingdom e-Gaming and all rights to operate the gaming software worldwide.
         </motion.p>
 
         {/* Divider */}
@@ -86,7 +86,7 @@ export default function Footer() {
             className="text-xs md:text-sm font-medium mb-4 md:mb-0"
             style={{ color: '#fff' }}
           >
-            Copyright © 2025 MAJESTIC GAMES | All rights reserved
+            Copyright © 2025 rupaya Games | All rights reserved
           </motion.p>
 
           <motion.a
