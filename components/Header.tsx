@@ -9,7 +9,7 @@ export default function Header() {
       {/* Logo */}
       <Link href="/" className="flex items-center">
         <span className="font-extrabold text-2xl tracking-tight" style={{ color: '#7A0000', textShadow: '1px 1px 2px rgba(255, 255, 255, 0.5)' }}>
-          rupaya Games
+          Rupaya Games
         </span>
       </Link>
 
