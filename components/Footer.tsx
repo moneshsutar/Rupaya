@@ -94,7 +94,9 @@ export default function Footer() {
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5, type: 'spring' }}
-            href="#"
+            href="https://t.me/rupayamatka"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-8 h-8 rounded-full bg-white flex items-center justify-center transition-transform hover:scale-110"
             aria-label="Telegram"
           >

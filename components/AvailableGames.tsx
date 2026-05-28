@@ -3,14 +3,21 @@
 import { motion } from 'framer-motion';
 
 const availableGames = [
-  { name: 'SRIDEVI MORNING', numbers: '467-78-567' },
-  { name: 'KARNATAKA DAY', numbers: '140-51-380' },
   { name: 'MILAN MORNING', numbers: '123-60-244' },
-  { name: 'MAIN BAZAR MORNING', numbers: '277-68-459' },
-  { name: 'KALYAN MORNING', numbers: '130-40-479' },
   { name: 'SRIDEVI', numbers: '480-23-490' },
-  { name: 'PADMAVATHI', numbers: '289-93-445' },
   { name: 'TIME BAZAR', numbers: '289-96-150' },
+  { name: 'MADHUR DAY', numbers: '345-28-189' },
+  { name: 'RAJDHANI DAY', numbers: '120-35-140' },
+  { name: 'MILAN DAY', numbers: '230-58-189' },
+  { name: 'SUPREME DAY', numbers: '124-70-190' },
+  { name: 'KALYAN', numbers: '123-67-340' },
+  { name: 'SRIDEVI NIGHT', numbers: '234-90-127' },
+  { name: 'MADHUR NIGHT', numbers: '139-33-256' },
+  { name: 'SUPREME NIGHT', numbers: '457-69-180' },
+  { name: 'MILAN NIGHT', numbers: '140-52-390' },
+  { name: 'KALYAN NIGHT', numbers: '357-55-168' },
+  { name: 'RAJDHANI NIGHT', numbers: '124-77-250' },
+  { name: 'MAIN BAZAR', numbers: '120-30-190' },
 ];
 
 export default function AvailableGames() {

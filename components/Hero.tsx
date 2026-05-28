@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <section 
-      className="w-full min-h-screen lg:min-h-[80vh] lg:h-[80vh] relative overflow-hidden py-16 lg:py-10 flex items-center"
+      className="w-full min-h-screen lg:min-h-[85vh] relative overflow-hidden py-16 lg:py-10 flex items-center"
     >
       {/* Sunlight Effect */}
       <div className="hero-sunlight-container">
@@ -45,10 +45,43 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-900 text-base sm:text-lg md:text-xl max-w-[90%] sm:max-w-lg mb-8 leading-relaxed font-semibold italic mx-auto lg:mx-0"
+            className="text-gray-900 text-base sm:text-lg md:text-xl max-w-[90%] sm:max-w-lg mb-6 leading-relaxed font-semibold italic mx-auto lg:mx-0"
           >
             Play online Matka with India's most secure and fastest-growing platform. Win big prizes and enjoy lightning-fast withdrawals.
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.25 }}
+            className="w-full max-w-[90%] sm:max-w-lg mb-8 flex flex-col items-center lg:items-start text-center lg:text-left mx-auto lg:mx-0"
+          >
+            <h2 
+              className="text-[#7A0000] text-3xl sm:text-4xl font-bold mb-2 leading-tight"
+              style={{ fontFamily: '"Brush Script MT", "Comic Sans MS", cursive', letterSpacing: '0.05em' }}
+            >
+              Welcome to RUPAYA MATKA Online Matka Play
+            </h2>
+            <p className="text-gray-900 text-base sm:text-lg md:text-xl font-semibold italic mb-4">
+              Most Genuine and Hi-tech Book
+            </p>
+            
+            <div className="space-y-2 mb-4 text-gray-900 text-base sm:text-lg md:text-xl font-semibold italic">
+              <div className="flex items-center justify-center lg:justify-start gap-2">
+                <span>Minimum Deposit : <span className="text-[#7A0000] font-bold">100</span></span>
+              </div>
+              <div className="flex items-center justify-center lg:justify-start gap-2">
+                <span>Minimum Withdrawal : <span className="text-[#7A0000] font-bold">500</span></span>
+              </div>
+              <div className="flex items-center justify-center lg:justify-start gap-2">
+                <span>Maximum Withdrawal : <span className="text-green-800 font-bold">No Limits</span></span>
+              </div>
+            </div>
+
+            <p className="text-[#7A0000] text-xl font-bold italic mt-2">
+              रूपया आपका, भरोसा हमारा। 🙏🏼
+            </p>
+          </motion.div>
 
           <motion.a
             initial={{ opacity: 0, y: 20 }}
@@ -56,7 +89,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.3 }}
             href="/Rupaya.apk"
             download
-            className="golden-button-shine px-8 py-3.5 rounded text-sm md:text-base font-bold uppercase tracking-widest shadow-xl hover:-translate-y-1 transition-transform mt-10 lg:mt-0"
+            className="golden-button-shine px-8 py-3.5 rounded text-sm md:text-base font-bold uppercase tracking-widest shadow-xl hover:-translate-y-1 transition-transform mt-2 lg:mt-0"
           >
             Download APK
           </motion.a>

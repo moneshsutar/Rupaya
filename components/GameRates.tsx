@@ -9,8 +9,8 @@ const gameRates = [
   { name: 'Single Pana', rate: '1 Rs Ka 150 Rs' },
   { name: 'Double Pana', rate: '1 Rs Ka 300 Rs' },
   { name: 'Triple Pana', rate: '1 Rs Ka 900 Rs' },
-  { name: 'Half Sangam', rate: '1 Rs Ka 1200 Rs' },
-  { name: 'Full Sangam', rate: '1 Rs Ka 12000 Rs' },
+  { name: 'Half Sangam', rate: '1 Rs Ka 10000 Rs' },
+  { name: 'Full Sangam', rate: '1 Rs Ka 100000 Rs' },
 ];
 
 export default function GameRates() {

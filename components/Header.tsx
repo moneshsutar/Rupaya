@@ -40,7 +40,9 @@ export default function Header() {
         </a>
 
         <a
-          href="#"
+          href="https://wa.me/918431644024"
+          target="_blank"
+          rel="noopener noreferrer"
           className="golden-button-shine w-9 h-9 flex items-center justify-center rounded-full shadow-sm"
         >
           <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
@@ -49,7 +51,9 @@ export default function Header() {
         </a>
 
         <a
-          href="#"
+          href="https://t.me/rupayamatka"
+          target="_blank"
+          rel="noopener noreferrer"
           className="golden-button-shine w-9 h-9 flex items-center justify-center rounded-full shadow-sm"
         >
           <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current pr-0.5">
