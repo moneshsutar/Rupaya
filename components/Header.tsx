@@ -40,7 +40,7 @@ export default function Header() {
         </a>
 
         <a
-          href="https://wa.me/918431644024"
+          href="https://wa.me/8660800695"
           target="_blank"
           rel="noopener noreferrer"
           className="golden-button-shine w-9 h-9 flex items-center justify-center rounded-full shadow-sm"
