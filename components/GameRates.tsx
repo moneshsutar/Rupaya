@@ -3,14 +3,13 @@
 import { motion } from 'framer-motion';
 
 const gameRates = [
-  { name: 'Single Digit', rate: '1 Rs Ka 9.5 Rs' },
-  { name: 'Jodi Digit', rate: '1 Rs Ka 95 Rs' },
-  { name: 'Red Bracket', rate: '1 Rs Ka 95 Rs' },
-  { name: 'Single Pana', rate: '1 Rs Ka 150 Rs' },
-  { name: 'Double Pana', rate: '1 Rs Ka 300 Rs' },
-  { name: 'Triple Pana', rate: '1 Rs Ka 900 Rs' },
-  { name: 'Half Sangam', rate: '1 Rs Ka 10000 Rs' },
-  { name: 'Full Sangam', rate: '1 Rs Ka 100000 Rs' },
+  { name: 'Single Digit', rate: '10₹ Ka 95₹' },
+  { name: 'Jodi Digit', rate: '10₹ Ka 950₹' },
+  { name: 'Single Pana', rate: '10₹ Ka 1500₹' },
+  { name: 'Double Pana', rate: '10₹ Ka 3000₹' },
+  { name: 'Triple Pana', rate: '10₹ Ka 9000₹' },
+  { name: 'Half Sangam', rate: '10₹ Ka 10000₹' },
+  { name: 'Full Sangam', rate: '10₹ Ka 100000₹' },
 ];
 
 export default function GameRates() {
